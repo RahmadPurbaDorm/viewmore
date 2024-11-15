@@ -335,23 +335,44 @@ header h1 {
     margin: 10px;
 }
 
-/* Gaya untuk perangkat desktop */
-@media (min-width: 992px) {
-    .column {
-        flex: 1; /* Setiap kolom mengambil ruang sama di desktop */
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar h1 {
+        font-size: 20px;
+    }
+
+    .navbar-links a {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    /* Display menu toggle button */
+    .menu-toggle {
+        display: inline-block;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu-toggle.active + .navbar-links {
+        display: flex;
     }
 }
 
-/* Gaya untuk perangkat tablet */
-@media (max-width: 991px) and (min-width: 576px) {
-    .column {
-        flex: 50%; /* Kolom dibagi menjadi dua di tablet */
+@media (max-width: 480px) {
+    .navbar h1 {
+        font-size: 18px;
     }
-}
 
-/* Gaya untuk perangkat seluler */
-@media (max-width: 575px) {
-    .column {
-        flex: 100%; /* Kolom mengambil lebar penuh di perangkat seluler */
+    .text {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    .prev, .next {
+        font-size: 16px;
+        padding: 12px;
     }
 }
