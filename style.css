@@ -115,6 +115,10 @@ body {
   transition: background-color 0.3s;
 }
 
+.slideshow-container {
+    
+}
+
 .order-button:hover {
   background-color: #1e8449;
 }
@@ -379,7 +383,7 @@ header h1 {
 
 /* Mengatur ukuran gambar dalam slideshow */
 .slides img {
-    width: 100%;       /* Foto akan menyesuaikan lebar container */
+    s       /* Foto akan menyesuaikan lebar container */
     max-width: max-content;  /* Batas maksimum lebar gambar */
     max-height: 300px; /* Batas maksimum tinggi gambar */
     height: auto;      /* Tinggi gambar menyesuaikan rasio asli */
