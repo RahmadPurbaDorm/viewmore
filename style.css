@@ -386,3 +386,9 @@ header h1 {
     object-fit: cover; /* Gambar akan dipotong jika perlu agar tetap rapi */
     margin: auto;
 }
+
+slides {
+    display: grid;
+    place-items: center; /* Menempatkan elemen ke tengah (horizontal dan vertikal) */
+    height: 100%;        /* Pastikan kontainer memiliki tinggi */
+}
