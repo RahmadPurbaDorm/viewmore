@@ -290,3 +290,68 @@ img {
         padding: 4px;
     }
 }
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gaya umum untuk halaman */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    color: #333;
+}
+
+header {
+    background: #4CAF50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Gaya konten utama */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    padding: 15px;
+    background: #f4f4f4;
+    margin: 10px;
+}
+
+/* Gaya untuk perangkat desktop */
+@media (min-width: 992px) {
+    .column {
+        flex: 1; /* Setiap kolom mengambil ruang sama di desktop */
+    }
+}
+
+/* Gaya untuk perangkat tablet */
+@media (max-width: 991px) and (min-width: 576px) {
+    .column {
+        flex: 50%; /* Kolom dibagi menjadi dua di tablet */
+    }
+}
+
+/* Gaya untuk perangkat seluler */
+@media (max-width: 575px) {
+    .column {
+        flex: 100%; /* Kolom mengambil lebar penuh di perangkat seluler */
+    }
+}
