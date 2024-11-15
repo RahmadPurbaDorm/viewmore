@@ -380,7 +380,7 @@ header h1 {
 /* Mengatur ukuran gambar dalam slideshow */
 .slides img {
     width: 100%;       /* Foto akan menyesuaikan lebar container */
-    max-width: 500px;  /* Batas maksimum lebar gambar */
+    max-width: max-content;  /* Batas maksimum lebar gambar */
     max-height: 300px; /* Batas maksimum tinggi gambar */
     height: auto;      /* Tinggi gambar menyesuaikan rasio asli */
     object-fit: cover; /* Gambar akan dipotong jika perlu agar tetap rapi */
